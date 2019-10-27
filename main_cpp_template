@@ -1,14 +1,16 @@
 
+#include <vector>
 #include <iostream>
 using namespace std;
 
 
 int main(int argc, char const *argv[])
 {
-    if ( true ) {
-        cout << "fail" << "\n";
-    } else {
-        cout << "pass" << "\n";
-    }
+    vector<bool> tests {
+        
+    };
+    bool result = true;
+    for (bool b : tests) result = result && b;
+    result ? (cout << "fail\n") : (cout << "good\n");
     return 0;
 }
